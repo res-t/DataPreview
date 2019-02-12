@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../img/DataPreview.png') 0 0  no-repeat;
+    font-family:PingFangSC-Regular;
+    overflow-x: hidden;  
+    height: 100%;  
+}
+.mt-49{
+    margin-top: 49px;
+}
+.data-P{
+   height: 535px;
+   width: 100%;
+}
+.data-p-content{
+    padding: 43px  0 0  51px;
+}
+.top-title{
+    font-size:36px;
+    font-weight:400;
+    color:rgba(42,97,159,1);
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    vertical-align:middle;
+    margin-left: 10px;
+
+}
+.data-Num{
+width: 92%;
+height:330px;
+background:rgba(255,255,255,1);
+border:2px solid rgba(238, 238, 238, 1);
+box-shadow:0px 5px 25px 0px rgba(5,0,1,0.3);
+opacity:0.8;
+border-radius:10px;
+margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+.Exhibition>li{
+    height: 280px;
+    width: 30%;
+    float: left;
+    /* border: 1px solid red; */
+}
+.Exhibition>li:nth-child(1) .balance{
+    font-size:16px;
+    font-weight:400;
+    color:rgba(191,1,1,1);
+}
+.Exhibition>li:nth-child(1) .consumption{
+    font-size:16px;
+    font-weight:400;
+    color:rgba(191,1,1,1);
+}
+.Exhibition>li{
+    border-right: 1px solid rgba(199, 199, 199,1)
+}
+.Exhibition>li:nth-child(2)>p,.Exhibition>li:last-child{
+    font-size:16px;
+    font-weight:400;
+    color:rgba(48,48,48,1);
+}
+.Exhibition>li:last-child>p{
+    padding-left: 61px;
+}
+
+/****************************注册数量******************************/
+.register{
+    height: 600px;
+}
+.register .top-title{
+    font-size:30px;
+    margin-left: 60px;
+    color:rgba(42,97,159,1);
+
+}
+/************柱状图**********************/
+.container{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    margin-right: 40px;
+    position: relative;
+}
+.bar-inner {
+    position: absolute;
+    width: 80px;
+    height: 0%;
+    top:-120x;
+    left: 30px;
+}
+.be,.af {
+    position: absolute;
+}
+.be {
+    top: -0.75em;
+    right: -1.5em;
+    width: 1.5em;
+    height: 100%;
+
+    -webkit-transform: skew(0deg, -45deg);
+    -moz-transform: skew(0deg, -45deg);
+    -o-transform: skew(0deg, -45deg);
+    -ms-transform: skew(0deg, -45deg);
+    transform: skew(0deg, -45deg);
+}
+.af{
+    top: -1.5em;
+    right: -0.75em;
+    width: 100%;
+    height: 1.5em;
+
+    -webkit-transform: skew(-45deg);
+    -moz-transform: skew(-45deg);
+    -o-transform: skew(-45deg);
+    -ms-transform: skew(-45deg);
+    transform: skew(-45deg);
+}
+.bar-inner {
+    z-index: 2; /* to be above .bar-background */
+    top: auto; /* reset position top */
+    /*background-color: rgba(11, 95, 163, .6);*/
+	background-color: rgba(97, 179, 73, .7);
+    height: 0%;
+    bottom: 0/*-2.5em*/;
+    color: transparent; /* hide text values */
+
+    -webkit-transition: height 2.2s ease-out, bottom 2.2s linear;
+    -moz-transition: height 2.2s ease-out, bottom 2.2s linear;
+    -o-transition: height 2.2s ease-out, bottom 2.2s linear;
+    -ms-transition: height 2.2s ease-out, bottom 2.2s linear;
+    transition: height 2.2s ease-out, bottom 2.2s linear;
+}
+.be{
+    /*background-color: rgba(1, 84, 134, .9);*/
+	background-color: rgba(97, 179, 73, .9)
+}
+
+/* Top panel */
+.af{
+    /*background-color: rgba(34, 156, 215, .4);*/
+	background-color: rgba(97, 179, 73, .6)
+}
+.chart{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.chart>li{
+   float: left;
+}
+.number{
+    z-index:9999999;color:#000;text-align: center
+}
+.channel{
+    z-index: 9999999;
+    position: absolute;
+    bottom: -50px;
+    color:#000;
+   
+}
